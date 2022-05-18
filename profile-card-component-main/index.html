@@ -1,35 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Profile card component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-  Victor Crest
-  26
-  London
+    <title>Frontend Mentor | Profile card component</title>
 
-  80K
-  Followers
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: sans-serif;
+        background-color: hsl(185, 75%, 39%);
+        display: flex;
+        align-items: center;
+        min-height: 100vh;
+        background-image: url("images/bg-pattern-top.svg"),
+          url("images/bg-pattern-bottom.svg");
+        background-repeat: no-repeat, no-repeat;
+        background-position: right 50vw bottom 50vh, left 50vw top 50vh;
+      }
+      .container {
+        margin: 0 auto;
+        text-align: center;
+      }
+      .wrapper {
+        max-width: 420px;
+        background-color: #fff;
+        border-radius: 15px;
+        overflow: hidden;
+        margin: 1rem;
+      }
+      .content img {
+        width: 100px;
+        height: 100px;
+        border: 5px solid #fff;
+        border-radius: 50%;
+        margin-top: -50px;
+      }
+      .content h2 {
+        margin-top: 1rem;
 
-  803K
-  Likes
-
-  1.4K
-  Photos
-  <div class="attribution">
+        font-size: 1.8rem;
+      }
+      .content span {
+        color: hsl(0, 0%, 59%);
+      }
+      .content #p {
+        color: hsl(0, 0%, 59%);
+        padding-top: 0.5rem;
+        margin-bottom: 1rem;
+      }
+      .footer {
+        display: flex;
+        justify-content: space-between;
+        border-top: 1px solid hsl(227, 10%, 46%);
+        padding: 2rem 3.4rem;
+      }
+      .num {
+        font-size: 1.2rem;
+        font-weight: 700;
+      }
+      .footer {
+        font-size: 0.8rem;
+      }
+      .footer div h5 {
+        font-size: 0.6rem;
+        padding-top: 0.4rem;
+        color: hsl(0, 0%, 59%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrapper">
+        <img src="images/bg-pattern-card.svg" />
+        <div class="content">
+          <img src="images/image-victor.jpg" alt="avatar" />
+          <h2>Victor Crest <span>26</span></h2>
+          <p id="p">London</p>
+          <div class="footer">
+            <div>
+              <p class="num">80K</p>
+              <h5>Followers</h5>
+            </div>
+            <div>
+              <p class="num">803K</p>
+              <h5>Likes</h5>
+            </div>
+            <div>
+              <p class="num">1.4K</p>
+              <h5>Photos</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
-</html>
+  </div> -->
